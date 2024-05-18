@@ -1,99 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Ecommerce 4RCFC</title>
+    <link rel="stylesheet" href="/your-path-to-fontawesome/css/fontawesome.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
 
-<div class="card">
-    <div class="search">
-        <input type="text" placeholder="Enter city name" spellcheck="false">
-        <button><img src="images/search.png"></button>
-    </div>
-    <div class="error">
-        <p>Invalid city name</p>
-    </div>
-    <div class="weather">
-        <img src="images/rain.png" class="weather-icon">
-        <h1 class="temp">22°c</h1>
-        <h2 class="city">New york</h2>
-        <div class="details">
-            <div class="col">
-               <img src="images/humidity.png">
-                <div>
-                    <p class="humidity">50%</p>
-                    <p>Humidity</p>
-                </div>
-            </div>
-            <div class="col">
-                <img src="images/wind.png">
-                 <div>
-                     <p class="wind">15 km/h</p>
-                     <p>Wind Speed</p>
-                 </div>
-             </div>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+
+            </ul>
         </div>
-    </div>
-</div>
+    </section>
 
-<script>
+    <section id="hero">
+    <h4>Grab the latest Deals</h4>
+    <h2>Super value deals</h2>
+    <h1>On all products</h1>
+    <p>upto 75% off!</p>
+    <button>Shop now</button>
+    </section>
 
-const apiKey ="693e719b145f652a9b320a873854ea03";
-const apiUrl ="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="img/free-delivery.png" alt="">
+             <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/fast-delivery.png" alt="">
+             <h6>Quick Delivery</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/jar.png" alt="">
+             <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/bonus.png" alt="">
+             <h6>Get Bonus</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/information.png" alt="">
+             <h6>24/7 Support</h6>
+        </div>
+        
+    </section>
 
-const searchBox = document.querySelector(".search input");
-const searchBtn = document.querySelector(".search button");
-const weatherIcon = document.querySelector(".weather-icon");
+    <section id="product1" class="section-p1">
+        <h2>Trending Products</h2>
+        <p>Season Collections</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/Westham United 【Kit Concept】1.jpeg" alt="">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Westham United Kit concept</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$60</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/Siam FC _ Kit Concept2.gif" alt="">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>SiamFC Kit concept</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$50</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/SCG Muangthong United 【Kit Concept】3.gif" alt="">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>Muangthong United Kit concept</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$60</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/PEA FC 【Kit Concept】4.gif" alt="">
+                <div class="des">
+                    <span>Nike</span>
+                    <h5>PEA FC Kit concept</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$50</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </section>
 
+    <section id="banner" class="section-m1">
+        <div class="banner-box">
+            <h4>Become like your Heros</h4>
+            <h2>upcoming season</h2>
+            <span>The best concept kit is on slae at RCFC</span>
+            <button class="white">Collection</button>
+        </div>
+    </section>
 
-async function checkWeather(city){
-    const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
-   
-    if(response.status == 404){
-        document.querySelector(".error").style.display = "block";
-        document.querySelector(".weather").style.display = "none";
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates avout our latest shop and <span>special offers.</span>
+            </p>
+            <div class="form">
+                <input type="text" placeholder="Your email address">
+                <button class="normal">Sign Up</button>
+            </div>
+        </div>
+    </section>
 
-    }else{
-        var data = await response.json();
+    <footer class="section-p1">
+        <div class="col">
+            <img src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><Strong>Address: </Strong> IIT Kgp, Westbengal</p>
+            <p><strong>Phone: </strong> 999999999</p>
+            <p><strong>Email: </strong> abcd123@gmail.com</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-youtube"></i>
+                </idv>
+            </div>
+        </div>
 
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">contact us</a>
 
-document.querySelector(".city").innerHTML = data.name;
-document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°c";
-document.querySelector(".humidity").innerHTML = data.main.humidity +"%";
-document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
+        </div>
 
-if(data.weather[0].main == "Clouds"){
-    weatherIcon.src = "images/clouds.png";
-}
-else if(data.weather[0].main == "clear"){
-    weatherIcon.src = "images/clear.png";
-}
-else if(data.weather[0].main == "Rain"){
-    weatherIcon.src = "images/rain.png";
-}
-else if(data.weather[0].main == "Drizzle"){
-    weatherIcon.src = "images/drizzle.png";
-}
-else if(data.weather[0].main == "Mist"){
-    weatherIcon.src = "images/mist.png";
-}
+    </footer>
 
-document.querySelector(".weather").style.display  = "block";
-document.querySelector(".error").style.display = "none";
-
-    }
-
-   
-}
-
-searchBtn.addEventListener("click", ()=>{
-    checkWeather(searchBox.value);
-})
-
-</script>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
